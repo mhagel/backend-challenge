@@ -58,8 +58,8 @@ Your API should be able to:
    Write down an example of such metadata in a new `metadata.json` file using the following properties:
    - `http://regen.network/samplingDepth`
    - `http://regen.network/soilSamples` 
-   - `https://schema.org/latitude`
-   - `https://schema.org/longitude`
+   - `http://schema.org/latitude`
+   - `http://schema.org/longitude`
    - `http://regen.network/totalCarbonPercentage`
 
   b. Add some tests for testing your API endpoints in `tests/routes.test.ts`.
