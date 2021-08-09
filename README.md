@@ -48,17 +48,22 @@ Your API should be able to:
 - create a new monitoring round
 - list all monitoring rounds for a given project
 
-3. In particular, monitoring round metadata can hold the following information:
-- sampling depth
-- list of soil samples with location and total carbon percentage for each of them
+3. Complete **one of** the following tasks:
 
-This metadata is stored as [JSON-LD](https://json-ld.org/).
-Write down an example of such metadata in a new `metadata.json` file using the following properties:
-- `http://regen.network/samplingDepth`
-- `http://regen.network/soilSamples` 
-- `https://schema.org/latitude`
-- `https://schema.org/longitude`
-- `http://regen.network/totalCarbonPercentage`
+  a. In particular, monitoring round metadata can hold the following information:
+   - sampling depth
+   - list of soil samples with location and total carbon percentage for each of them
+
+   This metadata is stored as [JSON-LD](https://json-ld.org/).
+   Write down an example of such metadata in a new `metadata.json` file using the following properties:
+   - `http://regen.network/samplingDepth`
+   - `http://regen.network/soilSamples` 
+   - `https://schema.org/latitude`
+   - `https://schema.org/longitude`
+   - `http://regen.network/totalCarbonPercentage`
+
+  b. Add some tests for testing your API endpoints in `tests/routes.test.ts`.
+  For simplicity sake, tests are just using the same database as the development server.
 
 ## Submission
 
