@@ -1,0 +1,20 @@
+{
+  "name": "regen-backend-challenge",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-promise-router": "^4.1.0",
+    "pg": "^8.7.1"
+  },
+  "scripts": {
+    "start": "ts-node server/index.ts",
+    "migrate": "flyway -c flyway.js migrate",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/pg": "^8.6.1",
+    "node-flywaydb": "^3.0.7",
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5"
+  }
+}
